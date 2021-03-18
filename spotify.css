@@ -1,0 +1,238 @@
+:root {
+  box-sizing: border-box;
+}
+::before ::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Cabin", sans-serif;
+}
+.container {
+  max-width: 95%;
+  height: 100%;
+  /* margin: 0 auto;  center this div with margin left and right auto */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav {
+  height: 70px;
+  margin-top: -9px;
+  margin-left: -9px;
+  margin-right: -9px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+.links a:hover {
+  color: lightcoral;
+  cursor: grabbing;
+}
+.links span {
+  pointer-events: none;
+}
+nav .links {
+  width: 400px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+#section1 {
+  margin-left: -9px;
+  margin-right: -9px;
+  padding-top: 80px;
+  min-height: 70vh;
+  /* display: flex;
+  flex-flow: row wrap; */
+  background-color: lightblue;
+  background-image: url(https://www-growth.scdn.co/static/home/bursts-tablet.svg);
+  background-size: 60%;
+  background-position: right 40% center;
+}
+#section1 .content {
+  padding-left: 30px;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#section1 .button:hover {
+  background-color: blueviolet;
+}
+#section1 .text {
+  height: 500px;
+  width: 400px;
+}
+#section1 .title1 {
+  text-transform: uppercase;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+#section1 .title2 {
+  text-transform: uppercase capitalize;
+  font-size: 50px;
+  padding: 20px 0;
+}
+#section .description {
+  margin-bottom: 10px;
+}
+#section1 .button {
+  margin: 20px;
+  padding: 10px;
+  border: black solid 1px;
+  border-radius: 10px;
+  background-color: rgb(68, 60, 60);
+  color: aliceblue;
+}
+#section2 {
+  background-color: #cb1582;
+  margin-right: -9px;
+  margin-left: -9px;
+  padding-top: 20px;
+}
+#section2 .content {
+  height: 370px;
+  width: 370px;
+  border: rgb(205, 179, 92) solid 1px;
+  position: relative;
+  margin-bottom: 20px;
+}
+#section2 .box1 {
+  height: 200px;
+  width: 350px;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(208, 141, 17, 1) 100%
+  );
+
+  position: absolute;
+  top: 90px;
+  right: 10px;
+}
+#section2 .box2 {
+  height: 250px;
+  width: 200px;
+  background-color: rgb(130, 210, 230);
+
+  position: absolute;
+  left: 80px;
+  top: 65px;
+}
+#section2 .box2 .note {
+  position: absolute;
+  bottom: 10px;
+  font-size: 40px;
+  color: crimson;
+  text-align: center;
+}
+#section2 .text1 {
+  text-transform: uppercase;
+  color: cyan;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+#section2 .text2 {
+  text-transform: capitalize;
+  font-size: 40px;
+  color: cyan;
+  margin-bottom: 15px;
+}
+#section2 .text3 {
+  color: cyan;
+  margin-bottom: 20px;
+}
+#section2 .button {
+  color: cyan;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: darkslategray;
+}
+#section2 .button:hover {
+  background-color: rgb(61, 139, 96);
+}
+#section3 {
+  padding-top: 80px;
+  margin-right: -9px;
+  margin-left: -9px;
+  background-image: url(/images/LiE_circles.svg);
+  background-size: auto 100%;
+  color: #1ed760;
+  background-color: #2d46b9;
+  background-position: right center;
+  background-repeat: no-repeat;
+  min-height: 606px;
+}
+
+footer .container {
+  display: flex;
+  max-width: 100vw;
+  margin: 0px -9px;
+  padding: 15px;
+  flex-flow: column wrap; /* flex-direction: column; */
+  background-color: black;
+  color: aliceblue;
+}
+footer .container .row1 {
+  display: flex;
+  width: 1000px;
+  flex-direction: row;
+  justify-content: space-between;
+  size: 13px;
+}
+footer .container .row2 {
+  display: flex;
+  width: 95%;
+  justify-content: flex-end;
+}
+.bigsize {
+  font-size: 20px;
+  color: antiquewhite;
+}
+.footer-left {
+  display: flex;
+  width: 600px;
+  justify-content: space-around;
+}
+.footer-name {
+  display: flex;
+  flex-direction: column;
+}
+footer a {
+  text-decoration: none;
+  color: #ffff;
+  padding: 5px;
+}
+footer a:hover {
+  text-decoration: none;
+  color: rgb(212, 113, 113);
+}
+.row3 {
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+  padding: 15px;
+}
+.row3 .left {
+  display: flex;
+  width: 65%;
+  justify-content: space-around;
+}
